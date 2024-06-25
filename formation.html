@@ -25,19 +25,114 @@
     <main>
         <section id="formation" style="color: white;">
             <h1 style="text-align: center; margin-top: 20px;">Formation</h1>
-            <div class="formation" style="display: flex; align-items: center; justify-content: center; flex-direction: column; margin-top: 20px; background: #18181b; border: 1px solid #27272a; border-radius: 48px;">
-                <h2 style="margin-bottom: 20px; margin-top: 20px;">Écoles :</h2>
-                <div class="ecole" style="padding-bottom: 20px; text-align: center;">
-                    <p>BTS SIO SLAM - <a class="btn" href="https://ecole-ipssi.com/?a_campaign=14726163359&a_content=130015451720&a_ad=586301903704&a_kw=ipssi&gad_source=1&gclid=CjwKCAiAlJKuBhAdEiwAnZb7lQXb7Fb6n2dZaWwOUZWiAYIIDJXZwfbcmaWN5REPoP0dZjx6g52sfxoCmUYQAvD_BwE" target="_blank" style="color: blue;">IPSSI</a></p>
-                    <p style="margin-top: 10px; font-size: small;">BAC STI2D Option ITEC - <a class="btn" href="https://www.lycee-langevin-wallon.com" target="_blank" style="color: red;">Lycée Langevin Wallon</a></p><!-- TO DO - decrease the font-size in phone mode -->
+
+            <style>
+                .main-container {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 20px;
+                    width: 100%;
+                    align-items: stretch;
+                }
+                .left-container {
+                    display: grid;
+                    grid-template-rows: 1fr 1fr;
+                    gap: 20px;
+                    height: 100%;
+                }
+                .container {
+                    display: flex;
+                    flex-direction: column;
+                    height: 100%;
+                }
+                .box {
+                    font-size: 24px;
+                    height: 100%;
+                }
+            
+                @media (max-width: 768px) {
+                    .main-container {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 0;
+                    }
+                    .left-container {
+                        grid-template-rows: 1fr;
+                    }
+                }
+            </style>
+            
+            <div class="main-container">
+                <div class="container">
+                    <div class="box" style="margin-top: 20px; display: flex; align-items: start; flex-direction: column; padding: 40px 20px; background: #18181b; border: 1px solid #27272a; border-radius: 48px;">
+                        <a href="">École</a>
+                        <p style="margin-top: 20px; display: flex; align-items: center; justify-content: center; font-size: large;">
+                            <a class="btn" href="https://ecole-ipssi.com/?a_campaign=14726163359&a_content=130015451720&a_ad=586301903704&a_kw=ipssi&gad_source=1&gclid=CjwKCAiAlJKuBhAdEiwAnZb7lQXb7Fb6n2dZaWwOUZWiAYIIDJXZwfbcmaWN5REPoP0dZjx6g52sfxoCmUYQAvD_BwE" target="_blank">
+                                <img src="images/ipssiLogo.jpg" style="width: 64px; height: 64px; border-radius: 50%;">
+                            </a>
+                            &nbsp;- BTS SIO SLAM
+                        </p>
+                        <p style="margin-top: 20px; display: flex; align-items: center; justify-content: center; font-size: large;">
+                            <a class="btn" href="https://www.lycee-langevin-wallon.com" target="_blank" style="color: blue;">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAAAY1BMVEX////9+/ukWliFAADcxMS6hoWhU1Hr3d2QJyWNHhvm1dXAkpKMGxirammMGRXx5+f17u7izs6oY2GWOTeNIR7Prq6aQ0GKEw6wc3LIoaCze3rZvr7Ut7fEmpmTMjCdSkj59PSOUX7+AAAA2klEQVR4AWIYKMCIRw5Q/lwYSAwCQBT9ccgShbj2X+XdnEsJ+yI4DHGSIlle/F9hbIk8XMWXMqkboK3rCCmcRbpe3T4MqtuRd8apFz/pmFmDLHblXeU2YA9WZ69u1xSrKXK4BfBn3QJVXQKn8iBbvcJ2jjXANd1feaSse/D76YCojn/loalHuhoX0FX2X3m465N8oDZAFviVB6wpEqgt3Il68bZDxJz9AuY1xDyCDg4lKrdbg1MElzmypEGm01RrNSY5EOwBPJybCpDuCs5c6w60yQwQZY+bZ/ICp+ML3HnGZbIAAAAASUVORK5CYII=" style="width: 64px; height: 64px; border-radius: 50%;">
+                            </a>
+                            &nbsp;- BAC STI2D Option ITEC
+                        </p>
+                    </div>
+
+                    <div class="box" style="margin-top: 20px; display: flex; align-items: start; flex-direction: column; padding: 40px 20px; background: #18181b; border: 1px solid #27272a; border-radius: 48px;">
+                        <a href="">Stage / Alternance</a>
+                        <p style="margin-top: 20px; display: flex; align-items: center; justify-content: center; font-size: large;">
+                            <a class="btn" href="https://juliangabinatienza.github.io/Castelblangeois-Stage/" target="_blank">
+                                <img src="images/logo.png" style="width: 64px; height: 64px; border-radius: 50%; background-color: white;">
+                            </a>
+                            &nbsp;- Développeur Front-End
+                    </div>
+                </div>
+            
+                <div class="container">
+                    <div class="box" style="margin-top: 20px; display: flex; align-items: start; flex-direction: column; padding: 40px 20px; background: #18181b; border: 1px solid #27272a; border-radius: 48px;">
+                        <a href="">Linkedin Learning</a>
+                        <p style="margin-top: 20px; display: flex; align-items: center; justify-content: center; font-size: large;">
+                            <a class="btn" href="https://www.linkedin.com/learning/certificates/561f09f503406469c99f3f2dd8f4153b549a7c944042dd981ee9e4e913585854?u=57065257" target="_blank">
+                                <img src="images/HTMLlogo.png" style="width: 64px; height: 64px;">
+                            </a>
+                            &nbsp;- HTML
+                        </p>
+                        <p style="margin-top: 20px; display: flex; align-items: center; justify-content: center; font-size: large;">
+                            <a class="btn" href="https://www.linkedin.com/learning/certificates/3b749d51b7ef911ef2d991a9622dca959c5857f294e5ca47da7b3ebfd485b67b?u=57065257 " target="_blank">
+                                <img src="images/CSSlogo.png" style="width: 64px; height: 64px;">
+                            </a>
+                            &nbsp;- CSS
+                        </p>
+                        <p style="margin-top: 20px; display: flex; align-items: center; justify-content: center; font-size: large;">
+                            <a class="btn" href="https://www.linkedin.com/learning/certificates/1b78e3cf51ac47a0d47e4ad559567837a347080807e9578aea39a2043aed66ab?u=57065257" target="_blank">
+                                <img src="images/JSlogo.png" style="width: 64px; height: 64px;">
+                            </a>
+                            &nbsp;- JavaScript
+                        </p>
+                        <p style="margin-top: 20px; display: flex; align-items: center; justify-content: center; font-size: large;">
+                            <a class="btn" href="https://www.linkedin.com/learning/certificates/ff1b4a9c4db9402f06bfcf2560437aa4b9d77a9a6d54a82601fa89910a379deb?u=57065257" target="_blank">
+                                <img src="images/PHPlogo.png" style="width: 64px; height: 64px;">
+                            </a>
+                            &nbsp;- PHP 8
+                        </p>
+                        <p style="margin-top: 20px; display: flex; align-items: center; justify-content: center; font-size: large;">
+                            <a class="btn" href="https://www.linkedin.com/learning/certificates/465a69ef2f2c04fbf838e8fadcb32388831a2220c91725c0458f74f3f921c98e?u=57065257" target="_blank">
+                                <img src="images/CSHARPlogo.png" style="width: 64px; height: 64px;">
+                            </a>
+                            &nbsp;- C#
+                        </p>
+                        <p style="margin-top: 20px; display: flex; align-items: center; justify-content: center; font-size: large;">
+                            <a class="btn" href="https://www.linkedin.com/learning/certificates/69065e0d85e6a908a8ca6b084924026c0facbdf8180e07b4c50e62a349c890ce?u=57065257" target="_blank">
+                                <img src="images/GITHUBlogo.jpg" style="width: 64px; height: 64px; border-radius: 50%;">
+                            </a>
+                            &nbsp;- Github
+                        </p>
+                    </div>
                 </div>
             </div>
-            <div style="display: flex; align-items: center; justify-content: center; flex-direction: column; margin-top: 20px; background: #18181b; border: 1px solid #27272a; border-radius: 48px;">
-                <h2 style="margin-top: 20px; margin-bottom: 10px;">Linkedin Learning :</h2>
-                <div class="certifications" style="text-align: center; margin-bottom: 20px;">
-                    <a href="https://www.linkedin.com/in/julian-gabin-atienza/details/certifications/"><i class="fa-brands fa-linkedin" style="font-size: 40px;"></i> Linkedin</a>
-                </div>      
-            </div>
+            
         </section>
     </main>
     

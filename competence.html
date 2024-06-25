@@ -23,7 +23,88 @@
     </header>
 
     <main>
+        <style>
+            .container {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 20px;
+            }
+            .left {
+                display: flex;
+                flex-direction: column;
+                height: 100%; /* Ensures the left side takes full height */
+            }
+            .right {
+                display: flex;
+                flex-direction: column;
+                height: 100%; /* Ensures the right side takes full height */
+            }
+            .box {
+                margin-top: 20px; 
+                display: flex; 
+                align-items: start; 
+                flex-direction: column; 
+                padding: 40px 20px; 
+                background: #18181b; 
+                border: 1px solid #27272a; 
+                border-radius: 48px;
+                flex: 1; /* Makes the boxes grow to fill available space */
+            }
+
+            @media (max-width: 600px) {
+                .container {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0;
+                }
+            }
+        </style>
         
+        <div class="container">
+            <div class="left">
+                <div class="box">
+                    <a href="">Dév. fullstack et mobile</a>
+                    <ul>
+                        <li style="display: flex; color: #bdbdbd; margin-top: 10px; margin-left: 25px; gap: 50px;"><p>4 / 5 <i class="fa-solid fa-star"></i></p> HTML5</li>
+                        <li style="display: flex; color: #bdbdbd; margin-top: 10px; margin-left: 25px; gap: 50px;"><p>4 / 5 <i class="fa-solid fa-star"></i></p> CSS3</li>
+                        <li style="display: flex; color: #bdbdbd; margin-top: 10px; margin-left: 25px; gap: 50px;"><p>4 / 5 <i class="fa-solid fa-star"></i></p> JavaScript</li>
+                        <li style="display: flex; color: #bdbdbd; margin-top: 10px; margin-left: 25px; gap: 50px;"><p>3 / 5 <i class="fa-solid fa-star"></i></p> TailwindCSS</li>
+                        <li style="display: flex; color: #bdbdbd; margin-top: 10px; margin-left: 25px; gap: 50px;"><p>3 / 5 <i class="fa-solid fa-star"></i></p> PHP8</li>
+                        <li style="display: flex; color: #bdbdbd; margin-top: 10px; margin-left: 25px; gap: 50px;"><p>3 / 5 <i class="fa-solid fa-star"></i></p> C#</li>
+                        <li style="display: flex; color: #bdbdbd; margin-top: 10px; margin-left: 25px; gap: 50px;"><p>3 / 5 <i class="fa-solid fa-star"></i></p> SQL</li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <a href="">BDD, cloud et hébergement</a>
+                    <ul>
+                        <li style="display: flex; color: #bdbdbd; margin-top: 10px; margin-left: 25px; gap: 50px;"><p>3 / 5 <i class="fa-solid fa-star"></i></p> MySQL</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="right">
+                <div class="box">
+                    <a href="">Environnement (IDE)</a>
+                    <ul>
+                        <li style="display: flex; color: #bdbdbd; margin-top: 10px; margin-left: 25px; gap: 50px;"><p>4 / 5 <i class="fa-solid fa-star"></i></p> Git, Github</li>
+                        <li style="display: flex; color: #bdbdbd; margin-top: 10px; margin-left: 25px; gap: 50px;"><p>4 / 5 <i class="fa-solid fa-star"></i></p> Visual Studio Code</li>
+                        <li style="display: flex; color: #bdbdbd; margin-top: 10px; margin-left: 25px; gap: 50px;"><p>4 / 5 <i class="fa-solid fa-star"></i></p> XAMPP</li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <a href="">Système d'exploitation</a>
+                    <ul>
+                        <li style="display: flex; color: #bdbdbd; margin-top: 10px; margin-left: 25px; gap: 50px;"><p>5 / 5 <i class="fa-solid fa-star"></i></p> Windows</li>
+                        <li style="display: flex; color: #bdbdbd; margin-top: 10px; margin-left: 25px; gap: 50px;"><p>3 / 5 <i class="fa-solid fa-star"></i></p> Linux Debian</li>
+                    </ul>
+                </div>
+                <div class="box">
+                    <a href="">Langue</a>
+                    <ul>
+                        <li style="display: flex; color: #bdbdbd; margin-top: 10px; margin-left: 25px; gap: 50px;"><p>4 / 5 <i class="fa-solid fa-star"></i></p> Anglais</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </main>
     
     <footer>
