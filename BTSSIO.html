@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        main {
+            color: white;
+        }
+
+        /* Section BTS SIO */
+        #bts_sio {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 50px;
+            text-align: center;
+            border-radius: 25px;
+        }
+
+        #bts_sio div div h1 {
+            display: none;
+        }
+
+        .Titre {
+            font-size: 25px;
+            margin-bottom: 0;
+        }
+
+        .OPTION {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .SISR {
+            border-radius: 25px;
+            width: 509px;
+            padding: 30px;
+            margin: 20px 0px;
+            text-align: start;
+        }
+
+        .SLAM {
+            border-radius: 25px;
+            width: 509px;
+            padding: 30px;
+            text-align: start;
+        }
+
+        .SISR:hover {
+            cursor: default;
+            border:  3px solid white;
+        }
+
+        .SLAM:hover {
+            cursor: default;
+            border:  3px solid white;
+        }
+
+        #bts_sio div div h2 {
+            padding-top: 20px;
+        }
+
+        @media screen and (max-width: 920px){
+            #bts_sio {
+                margin: 0;
+            }
+
+            .SLAM, .SISR {
+                width: 100%;
+                border: transparent;
+            }
+
+            .SLAM:hover, .SISR:hover {
+                border: transparent;
+            }
+        }
+    </style>
+
+    <title>Portfolio - Julian Atienza</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fa-solid fa-laptop-code"></i>
+            </div>
+            <div class="links" style="display: flex; align-items: center; justify-content: center;">
+                <a href="index.html">← Retour</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="bts_sio">
+            <div class="container_bts_sio">
+                <div>
+                    <h1>BTS SIO</h1><!--Invisible-->
+                    <h2>Brevet de Technicien Supérieur | Services Informatiques aux Organisations</h2>
+                    <br>
+                </div>
+                <div>
+                    <u>Le Brevet de Technicien Supérieur - Services Informatiques aux Organisations (BTS SIO)</u> s'adresse à ceux qui souhaitent se former en deux ans aux métiers d'administrateur réseau ou de développeur, afin d'intégrer directement le marché du travail ou de poursuivre des études dans le domaine de l'informatique.
+                </div>
+                <div class="Titre"  style="padding-top: 15px; padding-bottom: 15px;">Les options du BTS SIO :</div>
+                <div class="OPTION">
+                    <div class="SLAM left" style="margin-top: 20px; background: #18181b; border: 1px solid #27272a; border-radius: 48px;">
+                        <u>SLAM (Solutions Logicielles et Applications Métiers):</u> <br>
+                        La spécialisation SLAM est plus orientée vers le développement. Elle forme des professionnels au développement d'applications telles que des sites web, des applications mobiles et des logiciels, ainsi qu'à la rédaction de documentations techniques associées.
+                        <div style="padding-top: 15px; padding-bottom: 15px;">Les débouchés du BTS SIO SLAM :</div>
+                        <ul>
+                            <li style="padding-top: 3px; padding-bottom: 3px;">Chef de projet web et stratégie digitale</li>
+                            <li style="padding-top: 3px; padding-bottom: 3px;">Concepteur développeur web</li>
+                            <li style="padding-top: 3px; padding-bottom: 3px;">Développeur de solutions mobiles et connectées</li>
+                            <li style="padding-top: 3px; padding-bottom: 3px;">Responsable en ingénierie des logiciels</li>
+                            <li style="padding-top: 3px; padding-bottom: 3px;">Licence pro mention métiers de l'informatique : applications web</li>
+                            <li style="padding-top: 3px; padding-bottom: 3px;">Licence pro mention métiers de l'informatique : conception, développement et test de logiciels</li>
+                            <li style="padding-top: 3px; padding-bottom: 3px;">Classe préparatoire ingénierie industrielle</li>
+                            <li style="padding-top: 3px; padding-bottom: 3px;">Concepteur développeur d'applications</li>
+                        </ul>
+                    </div>
+                    <div class="SISR right" style="margin-top: 20px; background: #18181b; border: 1px solid #27272a; border-radius: 48px;">
+                        <u>SISR (Solutions d'Infrastructure, Systèmes et Réseaux):</u>
+                        La spécialisation SISR forme des professionnels des réseaux et équipements informatiques, incluant l'installation, la maintenance et la sécurité. Cela implique de travailler sur la conception, la mise en place, le déploiement, la maintenance et la sécurité des réseaux et des systèmes informatiques.
+
+                        <div style="padding-top: 15px; padding-bottom: 15px;">Les débouchés du BTS SIO SISR :</div>
+                        <ul>
+                            <li style="padding-top: 3px; padding-bottom: 3px;">Administrateur(trice) système, réseau et sécurité</li>
+                            <li style="padding-top: 3px; padding-bottom: 3px;">Administrateur(trice) systèmes, réseaux et bases de données</li>
+                            <li style="padding-top: 3px; padding-bottom: 3px;">Chef(fe) de projet logiciel et réseau</li>
+                            <li style="padding-top: 3px; padding-bottom: 3px;">Concepteur de systèmes d'information</li>
+                            <li style="padding-top: 3px; padding-bottom: 3px;">Responsable en ingénierie systèmes et réseaux</li>
+                            <li style="padding-top: 3px; padding-bottom: 3px;">Licence pro mention métiers de l'informatique : administration et sécurité des systèmes et des réseaux</li>
+                            <li style="padding-top: 3px; padding-bottom: 3px;">Licence pro mention métiers des réseaux informatiques et télécommunications</li>
+                            <li style="padding-top: 3px; padding-bottom: 3px;">Classe préparatoire ingénierie industrielle</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <a href="#">Mon Portfolio</a>
+        <div class="socials">
+            <a href="https://www.linkedin.com/in/julian-gabin-atienza/" target="_blank"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
+            <a href="https://github.com/JulianGabinAtienza" target="_blank"><i class="fa-brands fa-github"></i> Github</a>
+            <a href="mailto:j.atienza@ecole-ipssi.net" target="_blank"><i class="fa-regular fa-envelope"></i> E-mail</a>
+        </div>
+        <a href="#" class="online"><i class="fa-solid fa-circle"></i> Recherche d'alternance</a>
+    </footer>
+</body>
+</html>

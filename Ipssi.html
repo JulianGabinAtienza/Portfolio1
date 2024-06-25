@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <title>Portfolio - Julian Atienza</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fa-solid fa-laptop-code"></i>
+            </div>
+            <div class="links" style="display: flex; align-items: center; justify-content: center;">
+                <a href="index.html">← Retour</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="about">
+            <div class="left">
+                <h3>Étudiant : Développeur FullStack</h3>
+                <div class="info">
+                    <h2>Ipssi</h2>
+                    <div class="buttons"></div>
+                </div>
+            </div>
+            <div class="right" style="width: 200px; height: 200px; border-radius: 50%;">
+                <img src="images/ipssiLogo.jpg" alt="" style="width: 200px; height: 200px; margin: 0; border: 0;">
+            </div>
+        </div>
+
+        <style>
+            .container {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                width: 100%;
+                gap: 20px;
+            }
+            .box {
+                font-size: 16.5px;
+                height: 240px;
+            }
+        
+            @media (max-width: 768px) {
+                .container {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 0;
+                }
+                .box {
+                    margin-top: 20px;
+                    height: 100%;
+                }
+            }
+        </style>
+        
+        <div class="container">
+            <div class="box" style="margin-top: 20px; display: flex; align-items: start; flex-direction: column; padding: 40px 20px; background: #18181b; border: 1px solid #27272a; border-radius: 48px;">
+                <a href="">Présentation</a>
+                <p style="color: #bdbdbd; margin-top: 10px;">IPSSI est une école supérieure fondée en 1998 avec une renommée spécialisée dans les domaines de l'informatique, du numérique et du design. Possédant 7 campus, dont un située à Paris, elle propose des formations de haute qualité, allant du Bachelor au Mastère, alliant théorie et pratique grâce à des partenariats étroits avec des entreprises leaders du secteur. L'IPSSI se distingue par son approche pédagogique innovante, ses projets concrets et son accompagnement personnalisé, préparant ainsi ses étudiants à devenir des professionnels compétents et recherchés sur le marché du travail.</p>
+            </div>
+            <div>
+                <a href="https://github.com/stars/JulianGabinAtienza/lists/travaux-dirigés" target="_blank">
+                    <button style="height: 64px; width: 100%; margin-top: 20px; color: white; background: #18181b; border: 1px solid #27272a; border-radius: 48px; display: flex; justify-content: center; align-items: center;">TD - Travaux Dirigés</button>
+                </a>
+                <a href="https://github.com/stars/JulianGabinAtienza/lists/ateliers-de-professionnalisation" target="_blank">
+                    <button style="height: 64px; width: 100%; margin-top: 20px; color: white; background: #18181b; border: 1px solid #27272a; border-radius: 48px; display: flex; justify-content: center; align-items: center;">AP - Ateliers de Professionnalisation</button>
+                </a>
+                <a href="https://ecole-ipssi.com/ecole-informatique/" target="_blank">
+                    <button style="height: 64px; width: 100%; margin-top: 20px; color: white; background: #18181b; border: 1px solid #27272a; border-radius: 48px; display: flex; justify-content: center; align-items: center;">Ipssi</button>
+                </a>
+            </div>
+        </div>
+        
+    </main>
+    
+    <footer>
+        <a href="#">Mon Portfolio</a>
+        <div class="socials">
+            <a href="https://www.linkedin.com/in/julian-gabin-atienza/" target="_blank"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
+            <a href="https://github.com/JulianGabinAtienza" target="_blank"><i class="fa-brands fa-github"></i> Github</a>
+            <a href="mailto:j.atienza@ecole-ipssi.net" target="_blank"><i class="fa-regular fa-envelope"></i> E-mail</a>
+        </div>
+        <a href="#" class="online"><i class="fa-solid fa-circle"></i> Recherche d'alternance</a>
+    </footer>
+</body>
+</html>
