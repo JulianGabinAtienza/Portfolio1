@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <style>
+        .box {
+                margin-top: 20px; 
+                display: flex; 
+                align-items: start; 
+                flex-direction: column; 
+                padding: 40px 20px; 
+                background: #18181b; 
+                border: 1px solid #27272a; 
+                border-radius: 48px;
+                flex: 1; /* Makes the boxes grow to fill available space */
+            }
+
+            .link-grid {
+                display: grid;
+                gap: 10px;
+                margin-top: 20px;
+                justify-items: center;
+            }
+        
+            /* 6 columns on larger screens */
+            @media (min-width: 1024px) {
+                .link-grid {
+                    grid-template-columns: repeat(6, 1fr);
+                }
+            }
+        
+            /* 3 columns on smaller screens (phones) */
+            @media (max-width: 1023px) {
+                .link-grid {
+                    grid-template-columns: repeat(3, 1fr);
+                }
+            }
+    </style>
+
+    <title>Portfolio - Julian Atienza</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fa-solid fa-laptop-code"></i>
+            </div>
+            <div class="links" style="display: flex; align-items: center; justify-content: center;">
+                <a href="../index.html">← Retour</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1 style="color: #bdbdbd; text-align: center; margin-top: 20px;">Veilles</h1>
+        <div class="container">
+            <div class="box">
+                <ul style="margin-left: 15px;">
+                    <li style="color: #bdbdbd;">
+                        QU'EST-CE QUE LA VEILLE TECHNOLOGIQUE ?
+                    </li>
+                    <p style="color: #bdbdbd; padding: 20px;">La veille technologique ou veille scientifique et technique consiste à s’informer de façon systématique sur les techniques les plus récentes et surtout sur leur mise à disposition commerciale (ce qui constitue la différence entre la technique et la technologie). Cette activité met en œuvre des techniques d’acquisition, de stockage et d’analyse d’informations et leur distribution automatique aux différentes sections concernées de l’entreprise, à la manière d’une revue de presse. Ces informations peuvent concerner une matière première, un produit, un composant, un procédé, l’état de l’art et l’évolution de l’environnement scientifique, technique, industriel ou commercial de l’entreprise.</p>
+                    <li style="color: #bdbdbd;">
+                        SUJET DE LA VEILLE TECHNOLOGIQUE
+                    </li>
+                    <p style="color: #bdbdbd; padding: 20px;">Les thèmes sur lesquels j'ai effectué une veille technologique sont : Les écrans à points quantiques où quantum dots screens</p>
+                    <li style="color: #bdbdbd;">
+                        QUEL SONT LES MOYENS QUE J’UTILISE POUR RÉALISER MA VEILLE ?
+                    </li>
+                    <p style="color: #bdbdbd; padding: 20px;">Google Alert</p>
+                </ul>
+            </div>
+        </div>
+
+        <div class="link-grid">
+            <a href="https://www.tomshardware.fr/5-choses-a-savoir-sur-les-televiseurs-a-quantum-dots/">
+                <button style="width: 100px; height: 100px; border-radius: 17%; background-color: transparent;">
+                    <img src="../images/tomsHardware.png" style="width: 90px; height: 90px; border-radius: 15%;">
+                </button>
+            </a>
+            <a href="https://www.lesnumeriques.com/tv-televiseur/nanosys-affirme-avoir-devoile-le-premier-veritable-ecran-qled-ou-qd-led-n204849.html">
+                <button style="width: 100px; height: 100px; border-radius: 17%; background-color: transparent;">
+                    <img src="../images/lesNumeriques.png" style="width: 90px; height: 90px; border-radius: 15%;">
+                </button>
+            </a>
+            <a href="https://www.on-mag.fr/index.php/video-hd/news/tv-video/24666-nouvelle-technologie-pour-les-futures-tv-nanoled-du-qled-auto-emissif-a-ne-pas-confondre-avec-les-mini-led">
+                <button style="width: 100px; height: 100px; border-radius: 17%; background-color: transparent;">
+                    <img src="../images/onMag.png" style="width: 90px; height: 90px; border-radius: 15%;">
+                </button>
+            </a>
+            <a href="https://www.techniques-ingenieur.fr/actualite/articles/un-moniteur-aux-couleurs-embellies-par-les-quantum-dots-33720/">
+                <button style="width: 100px; height: 100px; border-radius: 17%; background-color: transparent;">
+                    <img src="../images/techniqueDeLingenieur.png" style="width: 90px; height: 90px; border-radius: 15%;">
+                </button>
+            </a>
+            <a href="https://www.avcesar.com/tv-oled-samsung-s95b-la-revolution-quantum-dots-37329">
+                <button style="width: 100px; height: 100px; border-radius: 17%; background-color: transparent;">
+                    <img src="../images/AVCesar.png" style="width: 90px; height: 90px; border-radius: 15%;">
+                </button>
+            </a>
+            <a href="https://www.clubic.com/pro/entreprises/samsung/actualite-381000-qu-est-ce-que-le-qd-oled-samsung-nous-en-dit-plus-sur-sa-nouvelle-technologie.html">
+                <button style="width: 100px; height: 100px; border-radius: 17%; background-color: transparent;">
+                    <img src="../images/clubic.png" style="width: 90px; height: 90px; border-radius: 15%;">
+                </button>
+            </a>
+            <!-- Add more links as needed -->
+        </div>    
+    </main>
+    
+    <footer>
+        <a href="#">Mon Portfolio</a>
+        <div class="socials">
+            <a href="https://www.linkedin.com/in/julian-gabin-atienza/" target="_blank"><i class="fa-brands fa-linkedin"></i> Linkedin</a>
+            <a href="https://github.com/JulianGabinAtienza" target="_blank"><i class="fa-brands fa-github"></i> Github</a>
+            <a href="mailto:j.atienza@ecole-ipssi.net" target="_blank"><i class="fa-regular fa-envelope"></i> E-mail</a>
+        </div>
+        <a href="#" class="online"><i class="fa-solid fa-circle"></i> Recherche d'alternance</a>
+    </footer>
+</body>
+</html>
