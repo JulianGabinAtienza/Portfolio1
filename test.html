@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scroll to Middle</title>
+  <style>
+    .full-height {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid black; /* Just to visualize the div */
+      margin-bottom: 20px; /* Just to separate the divs */
+    }
+  </style>
+</head>
+<body>
+  <a href="#section1" class="scroll-to-middle">Go to Section 1</a>
+  <a href="#section2" class="scroll-to-middle">Go to Section 2</a>
+
+  <div id="section1" class="full-height">
+    <h2>Section 1</h2>
+  </div>
+  <div id="section2" class="full-height">
+    <h2>Section 2</h2>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelectorAll('.scroll-to-middle').forEach(link => {
+        link.addEventListener('click', function(event) {
+          event.preventDefault();
+          const targetId = this.getAttribute('href').substring(1);
+          const targetElement = document.getElementById(targetId);
+          if (targetElement) {
+            const topPosition = targetElement.offsetTop + (targetElement.offsetHeight / 2) - (window.innerHeight / 2);
+            window.scrollTo({
+              top: topPosition,
+              behavior: 'smooth'
+            });
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>
